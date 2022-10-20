@@ -1,6 +1,6 @@
 pipeline {
     agent  { label 'NODEJS-JDK-11' }
-    triggers { pollSCM('30 * * * 1-5') }
+    triggers { pollSCM('* * * * 1-5') }
     stages {
         stage ('git clone') {
             steps {
